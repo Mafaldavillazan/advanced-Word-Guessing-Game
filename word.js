@@ -12,6 +12,8 @@ function WordCreator(array, userInput) {
                 this.newArr.push(letterUpdate)
             }
         }
+    console.log(JSON.stringify(this.newArr,null,2))
+
 }
 
 module.exports = WordCreator;
