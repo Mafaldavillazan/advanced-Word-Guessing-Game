@@ -1,11 +1,22 @@
 //Creates constructor
-function Letter(string, ){
-    this.string = string.split("")
-    //Bolean that takes every letter and puts into boolan
-   arrLetters = []
-   arrLetters.push(string)
-
-   for(var i = 0; i<arrLetters.length;i++){
-       
-   }
+function letterChecker(letter){
+    this.letter = letter
+    this.guessed = false
+    
+    //Updates de value if the userInput is correct
+    function update(){
+        if(this.letter === userInput){
+            this.guessed = false
+        }
+    }
+    
+    //It will reveal the letter if the user has a right letter
+    function guessed(){
+        if(this.guessed){
+            return this.letter
+        }
+        else{
+            return "-"
+        }
+    }
 }
