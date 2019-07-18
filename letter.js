@@ -1,5 +1,5 @@
 //Creates constructor
-function letterChecker(letter){
+function LetterChecker(letter){
     this.letter = letter
     this.guessed = false
     
@@ -20,3 +20,6 @@ function letterChecker(letter){
         }
     }
 }
+
+//Export the constructor
+module.exports = LetterChecker;
